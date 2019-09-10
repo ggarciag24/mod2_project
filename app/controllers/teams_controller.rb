@@ -35,7 +35,8 @@ end
 
 private
   def team_params
-    params.require(:team).permit(:name, :city, :mascot, player_attributes: [:name, :jersey_number, :position, :points, :assists, :rebounds, :FGP, :current_team])
+    params.require(:team).permit(:name, :city, :mascot, player_attributes: [:name, :jersey_number, :position, :points,
+       :assists, :rebounds, :FGP, :current_team])
   end
 
 end
