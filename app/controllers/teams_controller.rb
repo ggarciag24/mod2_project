@@ -14,8 +14,9 @@ def new
 end
 
 def create
+  byebug
   @team = Team.create(team_params)
-
+  byebug
   redirect_to team_path(@team)
 end
 
@@ -26,6 +27,9 @@ def update
 end
 
 def destroy
+  @team.destroy
+
+  redirect_to teams_path
 end
 
 

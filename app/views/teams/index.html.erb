@@ -1,5 +1,5 @@
 <h1> All Teams </h1>
 
-<% @teams.each do |team| %>
-<%= team.name %>
+<% @teams.each do |t| %>
+<p><%=link_to t.name, team_path(t) %></p>
 <% end %>
