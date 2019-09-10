@@ -1,7 +1,15 @@
 <h1><%= @team.name %> </h1>
-<h2> <%= @team.city %></h2>
-<h3> <%= @team.mascot %></h3>
+<h2>City: <%= @team.city %></h2>
+<h3>Mascot: <%= @team.mascot %></h3>
 
-<% @team.players.each do |play| %>
-<p><%=link_to play.name, player_path(play)%></p>
+<ul>
+<% @team.players.each do |indiv_player| %>
+<li><%= indiv_player.name %></li>
 <% end %>
+</ul>
+
+<%=link_to "All Teams", teams_path %>
+<br><br>
+<%=link_to "Edit Team", edit_team_path(@team)%>
+<br><br>
+<%=link_to "Delete Team", team_path(@team), method: :delete, data: { confirm: 'Are you sure?' } %>
