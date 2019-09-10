@@ -6,6 +6,7 @@ end
 
 def show
   @team = Team.find(params[:id])
+
 end
 
 def new
@@ -14,20 +15,29 @@ def new
 end
 
 def create
-  byebug
-  @team = Team.create(team_params)
-  byebug
-  redirect_to team_path(@team)
+  @team = Team.new(team_params)
+  if @team.save
+    redirect_to team_path(@team)
+      else
+        render :new
+      end
 end
 
 def edit
+  @team = Team.find(params[:id])
+
 end
 
 def update
+  team = Team.find(params[:id])
+
+  team.update(team_params)
+
+  redirect_to team_path(team)
 end
 
 def destroy
-  @team.destroy
+  Team.find(params[:id]).destroy
 
   redirect_to teams_path
 end
@@ -35,7 +45,10 @@ end
 
 private
   def team_params
-    params.require(:team).permit(:name, :city, :mascot, player_attributes: [:name, :jersey_number, :position, :points, :assists, :rebounds, :FGP, :current_team])
+    params.require(:team).permit(:name, :city, :mascot, :point_guard_id,:shooting_guard_id, :small_forward_id, :power_forward_id, :center_id,
+      players_attributes: [:name, :jersey_number, :position, :points, :assists,
+         :rebounds, :current_team, :FGP])
+
   end
 
 end

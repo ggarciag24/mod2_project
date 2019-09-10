@@ -1,0 +1,28 @@
+<h1> Create your Team!</h1>
+
+  <%= form_for @team do |f| %>
+    <%= f.label "Team Name" %>
+    <%= f.text_field :name %>
+    <%= f.label "Choose your city" %>
+    <%= f.text_field :city %>
+    <%= f.label "What is your team's Mascot" %>
+    <%= f.text_field :mascot %>
+    <br>
+    <br>
+      <%= f.label :point_guard %>
+      <%= f.collection_select :point_guard_id, Player.find_players_with_position("PG"), :id, :name%></br>
+      <%= f.label :shooting_forward %>
+      <%= f.collection_select :shooting_guard_id, Player.find_players_with_position("SG"), :id, :name%></br>
+      <%= f.label :small_forward %>
+      <%= f.collection_select :small_forward_id, Player.find_players_with_position("SF"), :id, :name%></br>
+      <%= f.label :power_forward %>
+      <%= f.collection_select :power_forward_id, Player.find_players_with_position("PF"), :id, :name%></br>
+      <%= f.label :center %>
+      <%= f.collection_select :center_id, Player.find_players_with_position("C"), :id, :name%></br>
+
+
+      <br>
+
+    <%= f.submit "Edit Team!"%>
+
+    <% end %>
