@@ -18,14 +18,13 @@ def create
   @team = Team.new(team_params)
   if @team.save
     redirect_to team_path(@team)
-      else
-        render :new
-      end
+  else
+    render :new
+  end
 end
 
 def edit
   @team = Team.find(params[:id])
-
 end
 
 def update
@@ -59,6 +58,7 @@ end
 
 
 private
+
   def team_params
     params.require(:team).permit(:name, :city, :mascot, :point_guard_id,:shooting_guard_id, :small_forward_id, :power_forward_id, :center_id,
       players_attributes: [:name, :jersey_number, :position, :points, :assists,
