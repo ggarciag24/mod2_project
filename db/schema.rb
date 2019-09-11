@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2019_09_10_212805) do
     t.string "name"
     t.string "city"
     t.string "mascot"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

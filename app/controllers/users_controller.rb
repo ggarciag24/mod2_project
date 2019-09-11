@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
 
-    redirect_to new_team_path
+    redirect_to "/login"
   end
 
 
