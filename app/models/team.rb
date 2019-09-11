@@ -1,6 +1,7 @@
 class Team < ApplicationRecord
   has_many :team_players
   has_many :players, through: :team_players
+  belongs_to :user
   accepts_nested_attributes_for :players
 
   def point_guard_id=(integer_id)

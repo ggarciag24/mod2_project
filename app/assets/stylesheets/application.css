@@ -13,3 +13,61 @@
  *= require_tree .
  *= require_self
  */
+
+ .heading {
+    color: blue;
+    height: 67vh;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+    text-shadow: 4px 4px 5px black;
+    font-size: 100px;
+    font-stretch: ultra-expanded;
+    background-image: url(nba-header2.jpeg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.secondary-heading {
+  color :green;
+  height: 5vh;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 4px 4px 5px black;
+  font-weight: bold;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.third-heading {
+
+  color :green;
+  height: 5vh;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 25px;
+  text-align: center;
+  text-shadow: 4px 4px 5px black;
+  font-weight: bold;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+
+
+.ui.form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px 25vw;
+}
+
+/* #new_user {
+  text-align: center;
+    width: 80%;
+    margin: auto;
+} */

@@ -1,17 +1,37 @@
-<h1>Welcome to NBA Fantasy App! </h1>
-  <h2> Login </h2>
+<h1 class="heading">Welcome to NBA Fantasy App! </h1>
     <% if @notice %>
       <p><%= @notice %></p>
     <% end %>
 
-    <%= form_tag "login", method: "POST" do %>
-      <div>Username:
-        <%= text_field_tag :username %>
-      <div>Password:
-        <%= password_field_tag :password %>
-      </div>
-      <%= submit_tag "Log in" %>
-        <% end %>
+
+<div class="text-form">
+
+
+
+    <%= form_for @user, :html => {:class =>"ui form"} do |f| %>
+    <h2 class="secondary-heading"> Login </h2>
+
+    <div class="field">
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+    </div>
+
+
+    <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password%>
+    </div>
+
+    <%= f.submit%>
+
+    <% end %>
+</div>
+
+
   <br>
-  <h4> New User? Create Your Account Here</h4>
-  <%= button_to "Click Here" %>
+  <div class="text-form">
+    <div class="field">
+  <h4 class="third-heading"> New User? Create your account here</h4>
+  <button<%= link_to "Click Here", "/account"%></button>
+    </div>
+  </div>
