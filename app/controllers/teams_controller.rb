@@ -16,7 +16,10 @@ end
 
 def create
   @team = Team.new(team_params)
-  if @team.save
+  @team.user_id = current_user.id
+
+  if @team.valid?
+    @team.save
     redirect_to team_path(@team)
   else
     render :new

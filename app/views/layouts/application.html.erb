@@ -10,6 +10,17 @@
   </head>
 
   <body>
+    <div>
+        <% if @current_user %>
+        Welcome, <%= current_user.username%>
+          <%= form_tag "/logout", method: "DELETE" do %>
+            <%= submit_tag "Log out" %>
+        <% end %>
+        <% else %>
+            <%= link_to "log in", "/login" %>
+        <% end %>
+    </div>
+
     <%= yield %>
   </body>
 </html>

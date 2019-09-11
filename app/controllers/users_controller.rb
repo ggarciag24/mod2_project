@@ -5,10 +5,16 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(user_params)
+      @user = User.new(user_params)
 
-    redirect_to new_team_path
-  end
+      if @user.valid?
+        @user.save
+
+      redirect_to "/login"
+      else
+      render :new
+      end
+  end    
 
 
 private
