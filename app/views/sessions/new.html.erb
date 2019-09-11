@@ -4,14 +4,15 @@
       <p><%= @notice %></p>
     <% end %>
 
-    <%= form_tag "login", method: "POST" do %>
-      <div>Username:
-        <%= text_field_tag :username %>
-      <div>Password:
-        <%= password_field_tag :password %>
-      </div>
-      <%= submit_tag "Log in" %>
-        <% end %>
+    <%= form_for @user do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <%= f.label :password %>
+    <%= f.password_field :password%>
+
+    <%= f.submit %>
+
+    <% end %>
   <br>
   <h4> New User? Create your account here</h4>
-  <%= button_to "Click Here"%>
+  <button><%= link_to "Click Here", "/account"%></button>
