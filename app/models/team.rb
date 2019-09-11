@@ -3,6 +3,10 @@ class Team < ApplicationRecord
   has_many :players, through: :team_players
   belongs_to :user
   accepts_nested_attributes_for :players
+  validates :name, presence: true
+  validates :city, presence: true
+  validates :mascot, presence: true
+
 
   def point_guard_id=(integer_id)
     self.players << Player.find(integer_id)
