@@ -1,15 +1,36 @@
 
 <div class="ui form">
   <div class="labels">
-<h1><%= @team.name %> </h1>
+<h1><%= @team.name.upcase %> </h1>
 <h2>City: <%= @team.city %></h2>
 <h3>Mascot: <%= @team.mascot %></h3>
 
-<ul>
-<% @team.players.each do |indiv_player| %>
-<li><%=link_to indiv_player.name, player_path(indiv_player) %></li>
-<% end %>
-</ul>
+<table class="table">
+ <thead>
+   <tr><th class="column-heading">Position</th>
+     <th class="column-heading">Player</th>
+        <th class="column-heading">FGP</th>
+ </tr></thead>
+ <tbody>
+   <tr>
+     <td>
+        <% @team.players.each do |indiv_player| %>
+        <p><%=indiv_player.position %></p>
+        <% end %>
+      </td>
+      <td>
+       <% @team.players.each do |indiv_player| %>
+       <p><%=link_to indiv_player.name, player_path(indiv_player) %></p>
+       <% end %>
+     </td>
+     <td>
+       <% @team.players.each do |indiv_player| %>
+       <p><%=indiv_player.FGP %></p>
+       <% end %>
+ </tbody>
+</table>
+<br>
+
 
 <button><%=link_to "All Teams", teams_path %></button>
 <br><br>
