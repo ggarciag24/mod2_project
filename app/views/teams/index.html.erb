@@ -1,9 +1,21 @@
+<div class="ui form">
+  <div class="labels">
+
 <h1> Fantasy Profile <h1>
 
-<h3> All Your Teams </h3>
 
+<h3> All Your Teams </h3>
+  <% if current_user.teams.empty? %>
+    <p>You have no teams yets!</p>
+      <% end %>
 <% current_user.teams.each do |t| %>
 <p><%=link_to t.name, team_path(t) %></p>
 <% end %>
 
 <button><%=link_to "Create New Team", new_team_path %></button>
+
+
+<p><button><%=link_to " View All Players", players_path %></button></p>
+
+</div>
+</div>

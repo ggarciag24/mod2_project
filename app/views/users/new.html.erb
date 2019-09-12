@@ -1,11 +1,15 @@
-<h1> Create Your Account</h1>
+
+
+<div class="ui form">
+<div class="third-heading"><h1> Create Your Account</h1></div>
 
 <% if @user.errors.full_messages.any?%>
 <% @user.errors.full_messages.each do |msg|%>
-<li><%= msg %> </li>
+<div class="errors"><li><%= msg %> </li></div>
 <%end%>
 <%end%>
 
+<div class="labels">
 <%= form_for @user do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
@@ -21,7 +25,10 @@
 <br>
   <%= f.label :password_confirmation%>
   <%= f.password_field :password_confirmation %>
+
 <br>
   <%= f.submit %>
 
   <% end %>
+  </div>
+</div>

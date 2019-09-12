@@ -1,3 +1,6 @@
+
+<div class="ui form">
+  <div class="labels">
 <h1><%= @team.name %> </h1>
 <h2>City: <%= @team.city %></h2>
 <h3>Mascot: <%= @team.mascot %></h3>
@@ -13,3 +16,5 @@
 <button><%=link_to "Edit Team", edit_team_path(@team)%></button>
 <br><br>
 <button><%=link_to "Delete Team", team_path(@team), method: :delete, data: { confirm: 'Are you sure you want to delete this team?' } %></button>
+</div>
+</div>

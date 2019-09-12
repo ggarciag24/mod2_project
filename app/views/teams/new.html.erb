@@ -1,4 +1,6 @@
-<h1> Create your Fantasy Team!</h1>
+<div class="ui form">
+
+<h1 class="logwords"> Create your Fantasy Team!</h1>
 
 <% if @team.errors.full_messages.any?%>
 <% @team.errors.full_messages.each do |msg|%>
@@ -8,6 +10,7 @@
 
 
 
+  <div class="labels">
   <%= form_for @team do |f| %>
     <%= f.label "Team Name" %>
     <%= f.text_field :name %>
@@ -34,3 +37,5 @@
     <%= f.submit "Create Team!"%>
 
     <% end %>
+    </div>
+    </div>

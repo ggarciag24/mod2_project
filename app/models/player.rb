@@ -6,6 +6,19 @@ class Player < ApplicationRecord
       Player.where(position: position)
   end
 
+  def self.search(search)
+    if search
+      players = Player.where(position: search)
+      if players
+        players
+      else
+        Player.all
+      end
+    else
+      Player.all
+    end
+  end
+
 
 
 end

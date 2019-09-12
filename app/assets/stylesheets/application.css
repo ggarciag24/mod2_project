@@ -14,6 +14,13 @@
  *= require_self
  */
 
+body {
+  background: rgba(255, 255, 255, 0.9) url(hardwoodfloor.jpg) no-repeat center center fixed;
+  -webkit-background-size cover;
+  height: 100%;
+}
+
+
  .heading {
     color: blue;
     height: 67vh;
@@ -29,7 +36,7 @@
 }
 
 .secondary-heading {
-  color :green;
+  color :lime;
   height: 5vh;
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 40px;
@@ -44,7 +51,7 @@
 
 .third-heading {
 
-  color :green;
+  color :lime;
   height: 5vh;
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 25px;
@@ -65,7 +72,22 @@
   padding: 20px;
   margin: 50px 25vw;
   text-align: center;
+  background-image: url(nbaimage.jpg);
 }
+
+.labels {
+  color: white;
+}
+
+.logwords {
+  color: yellow;
+}
+
+.errors {
+  color: red;
+}
+
+
 
 /* #new_user {
   text-align: center;
