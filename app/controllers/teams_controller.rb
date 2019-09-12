@@ -39,6 +39,7 @@ def update
   pre_edit_p.each do |play|
     play.destroy
   end
+  
   name = params[:team][:name]
   city = params[:team][:city]
   mascot = params[:team][:mascot]

@@ -2,7 +2,7 @@
 
 <h3> All Your Teams </h3>
 
-<% @current_user.teams.each do |t| %>
+<% current_user.teams.each do |t| %>
 <p><%=link_to t.name, team_path(t) %></p>
 <% end %>
 

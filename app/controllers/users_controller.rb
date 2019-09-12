@@ -9,12 +9,13 @@ class UsersController < ApplicationController
 
       if @user.valid?
         @user.save
+        session[:username] = @user.username
 
-      redirect_to "/login"
+      redirect_to teams_path
       else
       render :new
       end
-  end    
+  end
 
 
 private
