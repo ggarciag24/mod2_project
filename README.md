@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Overview
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The NBA Fantasy App allows users to create an account or log in to an existing account. Then users can create many fantasy teams that consist of five starters(point guard, shooting guard, small forward, power forward, center). They are also able to edit their teams and delete them. Users can also look through the list of players provided and filter by position, lastly they can go to a players personal page and check their stats to see if that player is the one they want to choose. 
