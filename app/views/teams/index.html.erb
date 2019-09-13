@@ -9,9 +9,9 @@
     <p>You have no teams yets!</p>
       <% end %>
 <% current_user.teams.each do |t| %>
-<p><%=link_to t.name, team_path(t) %></p>
+<div id="links"><p><%=link_to t.name, team_path(t) %></p></div>
 <% end %>
-
+<br>
 <button><%=link_to "Create New Team", new_team_path %></button>
 
 

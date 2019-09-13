@@ -2,12 +2,14 @@
 
 <h1 class="logwords"> Create your Fantasy Team!</h1>
 
+
+<div id="error-messages">
 <% if @team.errors.full_messages.any?%>
 <% @team.errors.full_messages.each do |msg|%>
 <li><%= msg %> </li>
 <%end%>
 <%end%>
-
+</div>
 
 
   <div class="labels">

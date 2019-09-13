@@ -4,15 +4,19 @@
 
 <h4>Search by Position:</h4>
   <%= form_tag(players_path, method: :get) do %>
-    <%= select_tag :search, options_for_select(%w(PG SG SF PF C)) %>
+    <%= select_tag :search, options_for_select(%w(PG SG SF PF C), prompt: true) %>
     <%= submit_tag ("Search") %>
     <% end %>
-
-  <% @players.each do |p| %>
-    <p><%= link_to p.name, player_path(p) %></p>
+    <br>
+    <div id="list-items">
+  <div class="ui middle aligned animated list">
+    <% @players.each do |p| %>
+  <div class="item"><p><%= link_to p.name, player_path(p) %></p></div>
   <% end %>
+      </div>
+    </div>
+  </div>
+<br>
+  <button class="ui button"><%=link_to "View Your Teams", teams_path %></button>
 
-  <button><%=link_to "View Your Teams", teams_path %></button>
-
-</div>
 </div>

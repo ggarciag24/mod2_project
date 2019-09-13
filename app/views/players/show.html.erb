@@ -2,8 +2,7 @@
   <div class="labels">
 <h1> <%= @player.name %> </h1>
 
-
-
+<div id="stats"
   <p>Jersey Number: <%= @player.jersey_number %> </p>
   <p>Current Team: <%= @player.current_team %></p>
   <p>Position: <%= @player.position %> </p>
@@ -11,7 +10,7 @@
   <p>Average Assits per Game: <%= @player.assists %> </p>
   <p>Average Rebounds per Game: <%= @player.rebounds %> </p>
   <p>Field Goal Percetage: <%= @player.FGP %> </p>
-
+</div>
 
 <button><%=link_to "All Players", players_path %></button>
 </div>

@@ -13,11 +13,11 @@
     <div>
         <% if @current_user %>
         <div class="logwords"> Welcome, <%= current_user.username%> </div>
-          <%= form_tag "/logout", method: "DELETE" do %>
-            <%= submit_tag "Log out" %>
+        <%= form_tag "/logout", method: "DELETE" do %>
+        <%= submit_tag "Log out" %>
         <% end %>
         <% else %>
-            <%= link_to "log in", "/login" %>
+          <button><%= link_to "log in", "/login" %></button>
         <% end %>
     </div>
 

@@ -84,19 +84,40 @@ body {
   color: yellow;
 }
 
+
 .errors {
   color: red;
 }
 
 .table {
   text-align: center;
-  padding-left: 13em;
+  padding-left: 20em;
   padding-bottom: .5em;
 }
 
 .column-heading {
   font-size: 22px;
   padding-bottom: .4em;
+}
+
+#error-messages {
+  color: red;
+}
+
+#stats {
+  color: lime;
+  font-size: 18px
+}
+
+#custom-table {
+  margin-left: 0px;
+  padding-left: 0px;
+  font-style: oblique;
+}
+
+#list-items {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 1.2em;
 }
 
 
