@@ -7,7 +7,7 @@
     <p>You have no teams yets!</p>
       <% end %>
 <% current_user.teams.each do |t| %>
-<div class="ui blue basic button"><p><%=link_to t.name, team_path(t) %></p></div>
+<p><div class="ui blue basic button"><%=link_to t.name, team_path(t) %></div></p>
 <% end %>
 <br>
 <br>
