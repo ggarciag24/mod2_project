@@ -55,7 +55,7 @@ towns = Player.find_or_create_by(name: "Karl-Anthony Towns", jersey_number: 32, 
 lillard = Player.find_or_create_by(name: "Damian Lillard", jersey_number: 0, position: "PG",
       current_team: "Blazers", points: 17, assists: 12, rebounds: 7, FGP: 61.2)
 
-trae = Player.find_or_create_by(name: "Trae Young", jersey_number: 11, position: "SG",
+trae = Player.find_or_create_by(name: "Trae Young", jersey_number: 11, position: "PG",
       current_team: "Hawks", points: 25, assists: 9, rebounds: 8, FGP: 53.7)
 
 westbrook = Player.find_or_create_by(name: "Russell Westbrook", jersey_number: 0, position: "SG",
@@ -123,7 +123,88 @@ dragic = Player.find_or_create_by(name: "Goran Dragic", jersey_number: 7, positi
 
 waiters = Player.find_or_create_by(name: "Dion Waiters", jersey_number: 11, position: "SG",
       current_team: "Heat", points: 1, assists: 4, rebounds: 4, FGP: 25.7)
-      
+
+joel = Player.find_or_create_by(name: "Joel Embiid", jersey_number: 21, position: "C",
+      current_team: "Sixers", points: 20, assists: 6, rebounds: 12, FGP: 45.7)
+
+beal = Player.find_or_create_by(name: "Bradley Beal", jersey_number: 3, position: "SG",
+      current_team: "Wizards", points: 18, assists: 6, rebounds: 7, FGP: 48.2)
+
+kemba = Player.find_or_create_by(name: "Kemba Walker", jersey_number: 15, position: "PG",
+      current_team: "Celtics", points: 23, assists: 8, rebounds: 3, FGP: 43.2)
+
+demar = Player.find_or_create_by(name: "DeMar DeRozen", jersey_number: 10, position: "SG",
+      current_team: "Spurs", points: 20, assists: 6, rebounds: 6, FGP: 50.0)
+
+lou = Player.find_or_create_by(name: "Lou Williams", jersey_number: 23, position: "SG",
+      current_team: "Wizards", points: 27, assists: 5, rebounds: 5, FGP: 53.4)
+
+gary = Player.find_or_create_by(name: "Gary Harris", jersey_number: 14, position: "SF",
+      current_team: "Nuggets", points: 16, assists: 7, rebounds: 8, FGP: 48.2)
+
+deandre = Player.find_or_create_by(name: "DeAndre Jordan", jersey_number: 6, position: "C",
+      current_team: "Nets", points: 24, assists: 5, rebounds: 13, FGP: 60.7)
+
+al= Player.find_or_create_by(name: "Al Horford", jersey_number: 42, position: "C",
+      current_team: "Sixers", points: 16, assists: 5, rebounds: 9, FGP: 44.5)
+
+steven = Player.find_or_create_by(name: "Steven Adams", jersey_number: 12, position: "C",
+      current_team: "Thunder", points: 20, assists: 4, rebounds: 15, FGP: 54.3)
+
+hassan = Player.find_or_create_by(name: "Hassan Whiteside", jersey_number: 21, position: "C",
+      current_team: "Heat", points: 18, assists: 3, rebounds: 12, FGP: 48.0)
+
+enes = Player.find_or_create_by(name: "Enes Kanter", jersey_number: 11, position: "C",
+      current_team: "Celtics", points: 21, assists: 2, rebounds: 9, FGP: 42.5)
+
+myles = Player.find_or_create_by(name: "Myles Turner", jersey_number: 33, position: "C",
+      current_team: "Pacers", points: 25, assists: 4, rebounds: 10, FGP: 46.8)
+
+joakim = Player.find_or_create_by(name: "Joakim Noah", jersey_number: 13, position: "C",
+      current_team: "Grizzlies", points: 14, assists: 6, rebounds: 7, FGP: 40.7)
+
+klay = Player.find_or_create_by(name: "Klay Thompson", jersey_number: 11, position: "SG",
+      current_team: "Warriors", points: 22, assists: 7, rebounds: 6, FGP: 47.4)
+
+jj = Player.find_or_create_by(name: "JJ Redick", jersey_number: 17, position: "SG",
+      current_team: "Pelicans", points: 17, assists: 5, rebounds: 4, FGP: 49.0)
+
+danny = Player.find_or_create_by(name: "Danny Green", jersey_number: 14, position: "SG",
+      current_team: "Lakers", points: 15, assists: 6, rebounds: 5, FGP: 40.4)
+
+kentavious = Player.find_or_create_by(name: "Kentavious Caldwell-Pope", jersey_number: 1, position: "SG",
+      current_team: "Lakers", points: 16, assists: 5, rebounds: 6, FGP: 39.6)
+
+khris = Player.find_or_create_by(name: "Khris Middleton", jersey_number: 22, position: "SF",
+      current_team: "Lakers", points: 24, assists: 5, rebounds: 7, FGP: 42.8)
+
+victor = Player.find_or_create_by(name: "Victor Oladipo", jersey_number: 4, position: "SF",
+      current_team: "Pacers", points: 26, assists: 7, rebounds: 7, FGP: 44.4)
+
+harrison = Player.find_or_create_by(name: "Harrison Barnes", jersey_number: 40, position: "SF",
+      current_team: "Kings", points: 14, assists: 6, rebounds: 6, FGP: 37.9)
+
+trevor = Player.find_or_create_by(name: "Trevor Ariza", jersey_number: 1, position: "SF",
+      current_team: "Wizards", points: 19, assists: 7, rebounds: 4, FGP: 40.1)
+
+kristaps = Player.find_or_create_by(name: "Kristaps Porzingis", jersey_number: 6, position: "PF",
+       current_team: "Mavericks", points: 23, assists: 8, rebounds: 9, FGP: 45.1)
+
+millsap = Player.find_or_create_by(name: "Paul Millsap", jersey_number: 4, position: "PF",
+        current_team: "Nuggets", points: 20, assists: 6, rebounds: 7, FGP: 38.6)
+
+julius = Player.find_or_create_by(name: "Julius Randle", jersey_number: 30, position: "PF",
+        current_team: "Knicks", points: 25, assists: 4, rebounds: 10, FGP: 42.2)
+
+kyle = Player.find_or_create_by(name: "Kyle Kuzma", jersey_number: 0, position: "PF",
+        current_team: "Lakers", points: 30, assists: 10, rebounds: 10, FGP: 52.3)
+
+marvin = Player.find_or_create_by(name: "Marvin Bagley III", jersey_number: 35, position: "PF",
+        current_team: "Kings", points: 18, assists: 4, rebounds: 7, FGP: 38.5)
+
+rui = Player.find_or_create_by(name: "Rui Hachimura ", jersey_number: 8, position: "PF",
+        current_team: "Wizards", points: 16, assists: 4, rebounds: 9, FGP: 50.3)
+
 
 TeamPlayer.destroy_all
 
