@@ -120,6 +120,11 @@ body {
   font-size: 1.2em;
 }
 
+#players-table {
+  margin-left: 0px;
+  padding: 0px;
+  font-style: normal;
+}
 
 
 /* #new_user {

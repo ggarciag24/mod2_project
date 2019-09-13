@@ -2,16 +2,40 @@
   <div class="labels">
 <h1> <%= @player.name %> </h1>
 
-<div id="stats"
-  <p>Jersey Number: <%= @player.jersey_number %> </p>
-  <p>Current Team: <%= @player.current_team %></p>
-  <p>Position: <%= @player.position %> </p>
-  <p>Average Points per Game: <%= @player.points %> </p>
-  <p>Average Assits per Game: <%= @player.assists %> </p>
-  <p>Average Rebounds per Game: <%= @player.rebounds %> </p>
-  <p>Field Goal Percetage: <%= @player.FGP %> </p>
+<table class="ui inverted table" id="players-table">
+  <tbody>
+    <tr>
+      <td>Jersey Number</td>
+      <td><%= @player.jersey_number %></td>
+    </tr>
+    <tr>
+      <td>Current Team</td>
+      <td><%= @player.current_team %></td>
+    </tr>
+    <tr>
+      <td>Position</td>
+      <td><%= @player.position %></td>
+    </tr>
+    <tr>
+      <td>Average Points per Game</td>
+      <td><%= @player.points %></td>
+    </tr>
+    <tr>
+      <td>Average Assits per Game</td>
+      <td><%= @player.assists %></td>
+    </tr>
+    <tr>
+      <td>Average Rebounds per Game</td>
+      <td><%= @player.rebounds %></td>
+    </tr>
+    <tr>
+      <td>Field Goal Percentage</td>
+      <td><%= @player.FGP %></td>
+    </tr>
+  </tbody>
+</table>
 </div>
+<br>
 
-<button><%=link_to "All Players", players_path %></button>
-</div>
+<button class="ui button"><%=link_to "All Players", players_path %></button>
 </div>
